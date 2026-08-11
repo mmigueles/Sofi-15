@@ -1,0 +1,372 @@
+/* =====================================
+PORTADA
+====================================== */
+
+.hero {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding-top: 120px;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+/* =====================================
+TEXTO
+====================================== */
+
+.hero-text {
+
+    width: 50%;
+
+}
+
+
+.subtitulo {
+
+    color: var(--esmeralda);
+
+    letter-spacing: 5px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* =====================================
+SOFI + XV
+MISMO COLOR Y BRILLO
+====================================== */
+
+.hero h1,
+.hero h2,
+.corazon {
+
+    color: #d6d6d6;
+
+    text-shadow:
+
+        0 0 10px rgba(255, 255, 255, .9),
+
+        0 0 25px rgba(0, 184, 148, .8),
+
+        0 0 55px rgba(0, 184, 148, .55);
+
+    animation: brilloTitulo 4s ease-in-out infinite;
+
+}
+
+
+/* =====================================
+SOFI
+====================================== */
+
+.hero h1 {
+
+    font-family: 'Allura', cursive;
+
+    font-size: 15rem;
+
+    font-weight: 400;
+
+    line-height: 1;
+
+    letter-spacing: 2px;
+
+    margin: 0;
+
+}
+
+
+/* =====================================
+XV
+====================================== */
+
+.hero h2 {
+
+    font-family: 'Cinzel', serif;
+
+    font-weight: 700;
+
+    font-size: 8rem;
+
+    letter-spacing: 8px;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* =====================================
+CORAZÓN
+====================================== */
+
+.corazon {
+
+    display: inline-block;
+
+    font-family: Arial, sans-serif;
+
+    font-size: .42em;
+
+    margin-left: 12px;
+
+    vertical-align: middle;
+
+}
+
+
+/* =====================================
+BRILLO COMPARTIDO
+SOFI + CORAZÓN + XV
+====================================== */
+
+@keyframes brilloTitulo {
+
+    0% {
+
+        text-shadow:
+
+            0 0 8px rgba(255, 255, 255, .8),
+
+            0 0 20px rgba(0, 184, 148, .5),
+
+            0 0 40px rgba(0, 184, 148, .3);
+
+    }
+
+
+    50% {
+
+        text-shadow:
+
+            0 0 15px rgba(255, 255, 255, 1),
+
+            0 0 35px rgba(0, 184, 148, .9),
+
+            0 0 70px rgba(0, 184, 148, .6);
+
+    }
+
+
+    100% {
+
+        text-shadow:
+
+            0 0 8px rgba(255, 255, 255, .8),
+
+            0 0 20px rgba(0, 184, 148, .5),
+
+            0 0 40px rgba(0, 184, 148, .3);
+
+    }
+
+}
+
+
+/* =====================================
+FRASE
+====================================== */
+
+.frase {
+
+    max-width: 600px;
+
+    line-height: 1.8;
+
+    color: #d7d7d7;
+
+    margin-bottom: 40px;
+
+}
+
+
+/* =====================================
+BOTÓN
+====================================== */
+
+.boton {
+
+    display: inline-block;
+
+    padding: 18px 45px;
+
+    background: linear-gradient(
+        135deg,
+        #00b894,
+        #13d6a8
+    );
+
+    color: white;
+
+    border-radius: 50px;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    transition: .4s;
+
+    box-shadow:
+
+        0 0 20px rgba(0, 184, 148, .4);
+
+}
+
+
+.boton:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+
+        0 0 40px rgba(0, 184, 148, .9);
+
+}
+
+
+/* =====================================
+FOTO DE FONDO
+====================================== */
+
+.hero-img {
+
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    z-index: 0;
+
+}
+
+
+/* Imagen */
+
+.hero-img img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center 25%;
+
+    border-radius: 0;
+
+    border: none;
+
+    box-shadow: none;
+
+    opacity: .95;
+
+    transform: scale(.82);
+
+    animation: zoomFoto 15s ease-in-out infinite alternate;
+
+}
+
+
+/* =====================================
+DEGRADADO SOBRE LA FOTO
+====================================== */
+
+.hero-img::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, .25) 0%,
+            rgba(0, 0, 0, .55) 50%,
+            rgba(0, 0, 0, .90) 100%
+        );
+
+}
+
+
+/* =====================================
+OSCURECIDO SUAVE EN LOS BORDES
+====================================== */
+
+.hero-img::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+
+        radial-gradient(
+            circle at center,
+            transparent 30%,
+            rgba(0, 0, 0, .45) 100%
+        );
+
+    z-index: 1;
+
+}
+
+
+/* =====================================
+CONTENIDO DELANTE DE LA FOTO
+====================================== */
+
+.hero > *:not(.hero-img) {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+/* =====================================
+ANIMACIÓN DE LA FOTO
+====================================== */
+
+@keyframes zoomFoto {
+
+    from {
+
+        transform: scale(.82);
+
+    }
+
+    to {
+
+        transform: scale(.88);
+
+    }
+
+}

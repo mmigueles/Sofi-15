@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SOFI XV</title>
+
+
+    <!-- =====================================
+         TIPOGRAFÍAS
+    ====================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Allura&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Italianno&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+
+    <!-- =====================================
+         ICONOS
+    ====================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+    <!-- =====================================
+         CSS
+    ====================================== -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================
+         FONDO
+    ====================================== -->
+
+    <div class="background"></div>
+
+    <div class="lights">
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
+
+    <!-- =====================================
+         HERO / PORTADA
+    ====================================== -->
+
+    <section class="hero">
+
+
+        <!-- SOFI -->
+
+        <h1 class="nombre-sofi">Sofi</h1>
+
+
+        <!-- XV -->
+
+        <h2>XV</h2>
+
+
+        <!-- FOTO -->
+
+        <div class="hero-img">
+
+            <div class="brillos"></div>
+
+            <img
+                src="./img/disco.jpg"
+                alt="Sofi">
+
+        </div>
+
+
+        <!-- FRASE -->
+
+        <p class="frase">
+
+            "Los sueños se hacen realidad cuando se comparten
+            con las personas que más queremos.
+            Acompañame a celebrar una noche que recordaré
+            para siempre."
+
+        </p>
+
+
+    </section>
+
+
+
+    <!-- =====================================
+         PRESENTACIÓN DEL CONTADOR
+    ====================================== -->
+
+    <section class="intro-contador">
+
+        <p class="fecha-fiesta">
+
+            10 DE OCTUBRE DE 2026
+
+        </p>
+
+        <h2>
+
+            ¡La fiesta del año!
+
+        </h2>
+
+        <p class="faltan">
+
+            FALTAN…
+
+        </p>
+
+    </section>
+
+
+
+    <!-- =====================================
+         CONTADOR
+    ====================================== -->
+
+    <section id="contador" class="countdown">
+
+        <div class="contador">
+
+
+            <div class="box">
+
+                <span id="dias">00</span>
+
+                <small>Días</small>
+
+            </div>
+
+
+            <div class="box">
+
+                <span id="horas">00</span>
+
+                <small>Horas</small>
+
+            </div>
+
+
+            <div class="box">
+
+                <span id="minutos">00</span>
+
+                <small>Minutos</small>
+
+            </div>
+
+
+            <div class="box">
+
+                <span id="segundos">00</span>
+
+                <small>Segundos</small>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         INFORMACIÓN DEL EVENTO
+    ====================================== -->
+
+    <section class="evento">
+
+
+        <h2 class="titulo-seccion">
+
+            Mi Gran Noche
+
+        </h2>
+
+
+        <div class="cards-evento">
+
+
+            <div class="card">
+
+                <i class="fa-solid fa-calendar-days"></i>
+
+                <h3>Fecha</h3>
+
+                <p>
+
+                    10 de Octubre de 2026
+
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <i class="fa-solid fa-clock"></i>
+
+                <h3>Hora</h3>
+
+                <p>
+
+                    22:00 hs
+
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <h3>Lugar</h3>
+
+                <p>
+
+                    Salón Bethania
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- BOTÓN CÓMO LLEGAR -->
+
+        <div class="mapa">
+
+            <a
+                href="https://maps.google.com/?q=Julio+Irazusta+2043+Gualeguaychú"
+                target="_blank">
+
+                <i class="fa-solid fa-location-arrow"></i>
+
+                Cómo llegar
+
+            </a>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================
+         DETALLES
+    ====================================== -->
+
+    <section class="detalles">
+
+
+        <h2 class="titulo-seccion">
+
+            Te cuento todos los detalles
+
+        </h2>
+
+
+        <!-- DRESS CODE -->
+
+        <div class="detalle-acordeon">
+
+
+            <button
+                class="detalle-titulo"
+                onclick="toggleDetalle(this)">
+
+                <span>
+
+                    <i class="fa-solid fa-shirt"></i>
+
+                    DRESS CODE
+
+                </span>
+
+                <i class="fa-solid fa-chevron-down flecha"></i>
+
+            </button>
+
+
+            <div class="detalle-contenido">
+
+                <p>
+
+                    Elegante sport
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- REGALO -->
+
+        <div class="detalle-acordeon">
+
+
+            <button
+                class="detalle-titulo"
+                onclick="toggleDetalle(this)">
+
+                <span>
+
+                    <i class="fa-solid fa-gift"></i>
+
+                    REGALO
+
+                </span>
+
+                <i class="fa-solid fa-chevron-down flecha"></i>
+
+            </button>
+
+
+            <div class="detalle-contenido">
+
+
+                <p class="regalo-mensaje">
+
+                    ¡El mejor regalo es tu presencia!
+
+                </p>
+
+
+                <p class="regalo-texto">
+
+                    Pero si deseas hacerme un regalo,
+                    te brindo mis datos bancarios:
+
+                </p>
+
+
+                <!-- DATOS BANCARIOS -->
+
+                <div class="datos-bancarios">
+
+
+                    <!-- TITULAR -->
+
+                    <div class="dato">
+
+                        <span class="dato-titulo">
+
+                            Nombre del Titular
+
+                        </span>
+
+                        <strong>
+
+                            Sofia Migueles
+
+                        </strong>
+
+                    </div>
+
+                    <!-- ALIAS -->
+
+                    <div class="dato">
+
+                        <span class="dato-titulo">
+
+                            Alias
+
+                        </span>
+
+                        <strong id="alias">
+
+                            soso.migueles
+
+                        </strong>
+
+
+                        <button
+                            class="boton-copiar"
+                            onclick="copiarDato('alias', this)">
+
+                            <i class="fa-regular fa-copy"></i>
+
+                            Copiar Alias
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================
+         CONFIRMACIÓN DE ASISTENCIA
+    ====================================== -->
+
+    <section class="confirmacion">
+
+
+        <h2>
+
+            Confirmación de asistencia
+
+        </h2>
+
+
+        <p class="mensaje">
+
+            ¡En un día<br>
+            tan importante para mi,<br>
+            no podés faltar!
+
+        </p>
+
+
+        <a
+            href="https://wa.me/5491150102866?text=Hola%20Sofi%20%F0%9F%92%9A%20Quiero%20confirmar%20mi%20asistencia%20a%20tu%20gran%20noche%20%F0%9F%8E%89"
+            target="_blank"
+            class="boton-confirmar">
+
+            Confirmar mi asistencia
+
+        </a>
+
+
+        <p class="despedida">
+
+            ¡Te espero!
+
+        </p>
+
+
+    </section>
+
+
+
+    <!-- =====================================
+         JAVASCRIPT
+    ====================================== -->
+
+    <script src="js/countdown.js"></script>
+
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
