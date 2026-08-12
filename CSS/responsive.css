@@ -1,0 +1,153 @@
+/* ===================================================
+   RESPONSIVE
+=================================================== */
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    section {
+        padding: 80px 6%;
+    }
+
+}
+
+
+/* =========================================
+   CELULAR
+========================================= */
+
+@media (max-width: 600px) {
+
+    /* =====================================
+       PORTADA
+    ===================================== */
+
+    .hero {
+        width: 100%;
+        min-height: 100svh;
+
+        padding: 90px 15px 50px;
+
+        overflow: visible;
+    }
+
+
+    /* =====================================
+       SOFI
+    ===================================== */
+
+    .hero h1.nombre-sofi {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0;
+        padding: 0;
+
+        text-align: center;
+
+        font-size: 4rem;
+        line-height: 1;
+
+        position: relative;
+        left: 0;
+        right: 0;
+        transform: none;
+    }
+
+
+    /* =====================================
+       CORAZÓN
+    ===================================== */
+
+    .hero h1.nombre-sofi .corazon {
+        margin-left: 5px;
+    }
+
+
+    /* =====================================
+       XV
+    ===================================== */
+
+    .hero h2 {
+        width: 100%;
+
+        margin: 8px 0 25px;
+        padding: 0;
+
+        text-align: center;
+
+        font-size: 3.5rem;
+        line-height: 1;
+
+        position: relative;
+        left: 0;
+        right: 0;
+        transform: none;
+    }
+
+
+    /* =====================================
+       FRASE
+    ===================================== */
+
+    .frase {
+        width: 100%;
+        max-width: 340px;
+
+        margin: 0 auto 30px;
+
+        font-size: 14px;
+        line-height: 1.6;
+
+        text-align: center;
+    }
+
+
+    /* =====================================
+       DETALLES
+    ===================================== */
+
+    .detalles {
+        min-height: auto;
+
+        padding-top: 45px;
+        padding-bottom: 10px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE S — 320px
+========================================= */
+@media (max-width: 340px) {
+
+    .hero h1.nombre-sofi {
+        font-size: 3.9rem;
+    }
+
+    .hero h2 {
+        font-size: 3.9rem;
+    }
+
+}
+
+/* =========================================
+   MOBILE M — 375px
+========================================= */
+
+@media (min-width: 341px) and (max-width: 390px) {
+
+    .hero h1.nombre-sofi {
+        font-size: 4.2rem;
+    }
+
+    .hero h2 {
+        font-size: 4.2rem;
+    }
+
+}
